@@ -10,7 +10,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
         className
       )}
     >
@@ -47,8 +47,8 @@ export const BentoGridItem = ({
         className
       )}
       style={{
-        background: 'rgb(4, 7, 29)',
-        backgroundColor: 'gradient...'
+        background: 'rgb(2,0,36)',
+        backgroundColor: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(175,175,199,1) 35%, rgba(0,212,255,1) 100%)', 
       }}
     >
       <div className="group-hover/bento:translate-x-2 transition duration-200">
