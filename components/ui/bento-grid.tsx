@@ -76,7 +76,7 @@ export const BentoGridItem = ({
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, 'object-cover, object-center')}
+              className={cn(imgClassName, 'object-cover object-center')}
             />
           )}
         </div>
@@ -91,7 +91,7 @@ export const BentoGridItem = ({
         </div>
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 flex items-center justify-center text-white font-bold"/>
+            {/* <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold"/> */}
           </BackgroundGradientAnimation>
         )}
 
@@ -102,7 +102,7 @@ export const BentoGridItem = ({
             {description}
           </div>
 
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+          <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}>
             {title}
           </div>
 
